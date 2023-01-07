@@ -13,6 +13,8 @@ s.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 def get_all_forms(url):
     soup = bs(s.get(url).content, "html.parser")
     return soup.find_all("form")
+  
+  
 # Funksioni i cili merr te gjitha detajet e formave te marra nga funksioni i mesiperm
 def get_form_details(form):
 
