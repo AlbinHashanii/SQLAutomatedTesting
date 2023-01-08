@@ -9,3 +9,10 @@ Fajlli 'penetrationTesting.py' fillimisht teston për dobësitë e injektimit SQ
 
 Skripti përcakton gjithashtu një funksion ndihmës is_vulnerable(response), i cili merr një përgjigje HTTP si hyrje dhe kthen True nëse përgjigja tregon se URL-ja është e cenueshme ndaj sulmeve të injektimit SQL, dhe False ndryshe. Funksioni kërkon mesazhe specifike gabimi në përmbajtjen e përgjigjes që janë tregues të dobësive të injektimit SQL.
 
+Pastaj fajlli 'automatedTesting' ku edhe ekzekutohet aplikacioni fillimisht importon libraritë dhe modulet e nevojshme, duke përfshirë tkinter për GUI, requests dhe re për trajtimin e kërkesave HTTP dhe shprehjeve të rregullta, përkatësisht, dhe unittest për shkrimin dhe ekzekutimin e testeve të unit.
+
+Aplikacioni më pas përcakton një model shprehjeje të rregullt për të përputhur URL-të e vlefshme dhe një funksion give_result() që përdor funksionin scan_sql_injection() nga moduli penetrationTesting për të testuar një uebsajt të caktuar për dobësitë e injektimit SQL.
+
+Aplikacioni përcakton gjithashtu disa funksione për të trajtuar ndërveprimet e përdoruesit me GUI, duke përfshirë check_injection() i cili thirret kur përdoruesi klikon butonin "TEST" dhe clear_clicked() që thirret kur përdoruesi klikon butonin "CLEAR".
+
+Së fundi, aplikacioni krijon dritaren GUI dhe shton elemente të tilla si etiketat, fushat e hyrjes dhe butonat në të. Më pas hyn në ciklin kryesor të ngjarjeve për të pritur ndërveprimet e përdoruesit.
