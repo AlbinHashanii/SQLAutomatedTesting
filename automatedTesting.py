@@ -21,6 +21,14 @@ def give_result(url):
         return 'This website is vulnerable.'
     else:
         return 'This website is not vulnerable.'
+# Funksioni i butonit TEST
+def check_injection():
+    if not (url.get().startswith("http://") or url.get().startswith("https://")):
+        messagebox.showinfo("Result", "The url should start with http:// or https. Please try again?")
+    elif verify_url(url.get()):
+        messagebox.showinfo("Result", give_result(url.get()))
+    else:
+        messagebox.showerror("Result", "You have written an invalid url.")
 
 
 
