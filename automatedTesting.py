@@ -31,6 +31,16 @@ def check_injection():
         messagebox.showinfo("Result", give_result(url.get()))
     else:
         messagebox.showerror("Result", "You have written an invalid url.")
+        
+# Funksioni per verifikimin e url
+def verify_url(url):
+    return re.match(regex, url) is not None
+
+
+
+# Funksioni i butonit CLEAR
+def clear_clicked():
+    e1.delete(0, 'end'
 
 
 
